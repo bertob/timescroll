@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        svg {
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container"></section>
+    
+    <script src="d3.v3.min.js" charset="utf-8"></script>
+    <script type='text/javascript'>
+
+        window.addEventListener('load', function () {
+            
+            d3.xml('ui.svg', 'image/svg+xml', function (error, data) {
+              
+                  d3.select('body').node().appendChild(data.documentElement);
+                  
+                  var svg = d3.select('svg');
+                  
+                  var btn = svg.select("#button");
+                  var sb = svg.select("#scrollbar");
+                  var pa = svg.select("#progress-area");
+                  var pm = svg.select("#progress-marker");
+                  
+                  
+                  
+                  var appScreen = svg.select('#ScreenBackground');
+                  var screenWidth = +appScreen.attr('width'),
+                      screenHeight = +appScreen.attr('height');
+                  var appButton = svg.select('#AppButton')
+                      .on('mouseenter', function () {
+                          appButton.style('fill', '#AB69C6');
+                      })
+                      .on('mouseleave', function () {
+                          appButton.style('fill', '#9B59B6')
+                      })
+                      .on('click', function () {
+                          var x = Math.random() * screenWidth;
+                          var y = Math.random() * screenHeight;
+                          appButton
+                              .transition()
+                              .duration(1000)
+                              .ease('bounce')
+                              .attr('cx', x)
+                              .attr('cy', y);
+                  });
+            });
+            
+            /*
+            d3.xml('proto.svg', 'image/svg+xml', function (error, data) {
+                if (error) {
+                    console.log('Error while loading the SVG file!', error);
+                }
+                else {
+                    // add SVG to document
+                    d3.select('.container')
+                        .node()
+                        .appendChild(data.documentElement);
+                        
+                    // interactive elements
+                    var 
+                }
+            });
+            */
+
+        });
+
+    </script>
+</body>
