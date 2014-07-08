@@ -31,8 +31,8 @@
                 var btn = svg.select("#button");
                 var btnbg = svg.select("#button-bg");
                 var sb = svg.select("#scrollbar");
-                var pa = svg.select("#progress-area");
-                var pm = svg.select("#progress-marker");
+                var pArea = svg.select("#progress-area");
+                var pMarker = svg.select("#progress-marker");
                                 
                 //var tr = d3.transform(d3.select(this).attr("transform"));
                 //var btnx = tr.translate[0];
@@ -53,33 +53,53 @@
                         .duration(500)
                         .ease('bounce')
                         .attr('transform', newTransform);
-                        //.attr('cx', x);
                 });
             
             var drag = d3.behavior.drag()
                 .on("drag", dragmove);
+            
+            var testDrag = btn.call(drag);
 
             function dragmove(d) {
+                // var newX = -2320; 
+                // -2580  ... -2300     280
+                //   280  ...   590
+                /*
                 var t = d3.transform(d3.select(this).attr("transform"));            
                 var currx = t.translate[0];
                 var curry = t.translate[1];
-                                
-                console.log("CURR POS:  " + currx + "  " + curry);
+                */
+                var newX = d3.event.x - 2870;                
+                newX = Math.max(-2580, Math.min(-2300, newX));
                 
-                //var curX = d3.select(this).attr("transform").match(/\(([^,]+),/)[1];
-                var newX = d3.event.x - 2870;
-                // var newX = -2320; 
-                // -2580 ... -2300     280
-                // 280 ... 590
-                console.log("D3:  "+d3.event.x);
-                console.log("NEWX:  "+newX);
-                //var newX = Math.max(xScale.range()[0], d3.event.x);
-                //newX = Math.min(xScale.range()[1], newX);
                 var newTransform = d3.select(this).attr("transform").replace(/\([^,]+,/, "(" + newX + ",");
                 d3.select(this).attr("transform", newTransform);
+                
+                scrollTime(newX + 2440);
+                
+                console.log("D3:  " + d3.event.x);
+                console.log("NEWX:  " + newX);
             }
             
-            var testDrag = btn.call(drag);
+            
+            
+            function scrollTime(pos) {
+                var target = 0;
+                if (pos > 0) target = 396;
+                
+                f = Math.abs(pos) / 140;
+                console.log("POS:  " + Math.abs(pos) + "    F:  " + f);
+                //var width = +pArea.attr('width');
+                
+                console.log("TR  " + target)
+                console.log("SPEED  " + Math.exp(Math.abs(pos)));
+                
+                pArea
+                    .transition()
+                    .duration(0.001 * Math.exp(Math.abs(pos)) )
+                    .ease('linear')
+                    .attr('width', target);
+            }
 
                 /*
                 var appScreen = svg.select('#ScreenBackground');
