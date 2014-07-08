@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="75.097144"
-     inkscape:cy="80.818402"
+     inkscape:zoom="0.7"
+     inkscape:cx="238.26341"
+     inkscape:cy="283.16997"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -35,10 +35,10 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="729"
-     inkscape:window-height="377"
-     inkscape:window-x="479"
-     inkscape:window-y="192"
+     inkscape:window-width="981"
+     inkscape:window-height="701"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata4875">
@@ -59,11 +59,12 @@
      transform="translate(-240,-129.50501)">
     <rect
        style="color:#000000;fill:#1b1b1b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       id="rect4674"
+       id="view"
        width="400"
        height="640"
        x="240"
-       y="129.50505" />
+       y="129.50505"
+       inkscape:label="#rect4674" />
     <image
        sodipodi:absref="/home/tobias/design/timescroll/cover.png"
        xlink:href="cover.png"
@@ -112,13 +113,14 @@
       <path
          sodipodi:type="arc"
          style="color:#000000;fill:#ffb329;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-         id="path4692"
+         id="button-bg"
          sodipodi:cx="185"
          sodipodi:cy="590"
          sodipodi:rx="40"
          sodipodi:ry="40"
          d="m 225,590 a 40,40 0 0 1 -40,40 40,40 0 0 1 -40,-40 40,40 0 0 1 40,-40 40,40 0 0 1 40,40 z"
-         transform="matrix(1.125,0,0,1.125,2671.875,758.61218)" />
+         transform="matrix(1.125,0,0,1.125,2671.875,758.61218)"
+         inkscape:label="#path4692" />
       <g
          transform="translate(0,750)"
          id="g4694"

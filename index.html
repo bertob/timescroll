@@ -15,41 +15,96 @@
     <script type='text/javascript'>
 
         window.addEventListener('load', function () {
-            
+                             
             d3.xml('ui.svg', 'image/svg+xml', function (error, data) {
-              
-                  d3.select('body').node().appendChild(data.documentElement);
-                  
-                  var svg = d3.select('svg');
-                  
-                  var btn = svg.select("#button");
-                  var sb = svg.select("#scrollbar");
-                  var pa = svg.select("#progress-area");
-                  var pm = svg.select("#progress-marker");
-                  
-                  
-                  
-                  var appScreen = svg.select('#ScreenBackground');
-                  var screenWidth = +appScreen.attr('width'),
-                      screenHeight = +appScreen.attr('height');
-                  var appButton = svg.select('#AppButton')
-                      .on('mouseenter', function () {
-                          appButton.style('fill', '#AB69C6');
-                      })
-                      .on('mouseleave', function () {
-                          appButton.style('fill', '#9B59B6')
-                      })
-                      .on('click', function () {
-                          var x = Math.random() * screenWidth;
-                          var y = Math.random() * screenHeight;
-                          appButton
-                              .transition()
-                              .duration(1000)
-                              .ease('bounce')
-                              .attr('cx', x)
-                              .attr('cy', y);
-                  });
+                
+                // add SVG to document
+                d3.select('body').node().appendChild(data.documentElement);
+                
+                // get interactive elements
+                var svg = d3.select('svg');
+                
+                var view = d3.select('#view');
+                var w = +view.attr('width');
+                var h = +view.attr('height');
+                
+                var btn = svg.select("#button");
+                var btnbg = svg.select("#button-bg");
+                var sb = svg.select("#scrollbar");
+                var pa = svg.select("#progress-area");
+                var pm = svg.select("#progress-marker");
+                                
+                //var tr = d3.transform(d3.select(this).attr("transform"));
+                //var btnx = tr.translate[0];
+                
+                btn.on('mouseover', function () {
+                });                
+                
+                btn.on('mousedown', function () {
+                    btnbg.style('fill', '#ffcb6e');
+                });
+                
+                btn.on('mouseup', function () {
+                    btnbg.style('fill', '#ffb329');
+                    //var x = view.;
+                    var newTransform = d3.select(this).attr("transform").replace(/\([^,]+,/, "(" + -2440 + ",");
+                    btn
+                        .transition()
+                        .duration(500)
+                        .ease('bounce')
+                        .attr('transform', newTransform);
+                        //.attr('cx', x);
+                });
+            
+            var drag = d3.behavior.drag()
+                .on("drag", dragmove);
+
+            function dragmove(d) {
+                var t = d3.transform(d3.select(this).attr("transform"));            
+                var currx = t.translate[0];
+                var curry = t.translate[1];
+                                
+                console.log("CURR POS:  " + currx + "  " + curry);
+                
+                //var curX = d3.select(this).attr("transform").match(/\(([^,]+),/)[1];
+                var newX = d3.event.x - 2870;
+                // var newX = -2320; 
+                // -2580 ... -2300     280
+                // 280 ... 590
+                console.log("D3:  "+d3.event.x);
+                console.log("NEWX:  "+newX);
+                //var newX = Math.max(xScale.range()[0], d3.event.x);
+                //newX = Math.min(xScale.range()[1], newX);
+                var newTransform = d3.select(this).attr("transform").replace(/\([^,]+,/, "(" + newX + ",");
+                d3.select(this).attr("transform", newTransform);
+            }
+            
+            var testDrag = btn.call(drag);
+
+                /*
+                var appScreen = svg.select('#ScreenBackground');
+                var screenWidth = +appScreen.attr('width'),
+                  screenHeight = +appScreen.attr('height');
+                var appButton = svg.select('#AppButton')
+                  .on('mouseenter', function () {
+                      appButton.style('fill', '#AB69C6');
+                  })
+                  .on('mouseleave', function () {
+                      appButton.style('fill', '#9B59B6')
+                  })
+                  .on('click', function () {
+                      var x = Math.random() * screenWidth;
+                      var y = Math.random() * screenHeight;
+                      appButton
+                          .transition()
+                          .duration(1000)
+                          .ease('bounce')
+                          .attr('cx', x)
+                          .attr('cy', y);
+                });
+                */
             });
+            
             
             /*
             d3.xml('proto.svg', 'image/svg+xml', function (error, data) {
