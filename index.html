@@ -2,6 +2,10 @@
 <head>
     <meta charset="utf-8">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
         svg {
             margin: 0 auto;
         }
@@ -53,6 +57,8 @@
                         .duration(500)
                         .ease('bounce')
                         .attr('transform', newTransform);
+                    
+                    pArea.attr('width', +pArea.attr('width'));
                 });
             
             var drag = d3.behavior.drag()
@@ -94,9 +100,11 @@
                 console.log("TR  " + target)
                 console.log("SPEED  " + Math.exp(Math.abs(pos)));
                 
+                // 1 ...    200ms
+                // 0 ... 20.000ms
                 pArea
                     .transition()
-                    .duration(0.001 * Math.exp(Math.abs(pos)) )
+                    .duration(200 * Math.log(1/(0.01 + 0.00001)))
                     .ease('linear')
                     .attr('width', target);
             }
