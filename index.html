@@ -58,7 +58,11 @@
                         .ease('bounce')
                         .attr('transform', newTransform);
                     
-                    pArea.attr('width', +pArea.attr('width'));
+                    pArea
+                        .transition()
+                        .duration(100)
+                        .ease('ease-out')
+                        .attr('width', +pArea.attr('width'));
                 });
             
             var drag = d3.behavior.drag()
@@ -93,18 +97,19 @@
                 var target = 0;
                 if (pos > 0) target = 396;
                 
-                f = Math.abs(pos) / 140;
+                f = (Math.abs(pos) / 140) * 0.7 + 0.1;
                 console.log("POS:  " + Math.abs(pos) + "    F:  " + f);
                 //var width = +pArea.attr('width');
                 
                 console.log("TR  " + target)
-                console.log("SPEED  " + Math.exp(Math.abs(pos)));
+                console.log("SPEED  " + f);
                 
                 // 1 ...    200ms
                 // 0 ... 20.000ms
                 pArea
                     .transition()
-                    .duration(200 * Math.log(1/(0.01 + 0.00001)))
+                    //.duration(200 * (Math.log(1/(1 + 0.00001)) + 1))
+                    .duration(15000 * 1/(20 * f + 0.1))
                     .ease('linear')
                     .attr('width', target);
             }
