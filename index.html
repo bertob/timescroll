@@ -91,9 +91,10 @@
                 
                 scrollTime(scrollPos);
                 if (scrollPos > 0.8)
-                    nextItem(true);
+                    showNext(true)
                 else if (scrollPos < -0.8)
-                    nextItem(false);
+                    showNext(false);
+                
                 
                 log("D3:  " + d3.event.x);
                 log("NEWX:  " + newX);
@@ -119,11 +120,13 @@
                     .attr('width', target);                
             }
             
-            function nextItem(next) {
-                log("derp: " + next)
+            function showNext(next) {
+                
                 if (next) {
                     
-                } 
+                } else {
+                    
+                }
             }
             
             function log(p) {
