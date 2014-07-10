@@ -23,7 +23,9 @@ window.addEventListener('load', function () {
         
         var prevItem = svg.select("#prev");
         var nextItem = svg.select("#next");
+        var nextGroup = svg.select("#prevnext");
                
+        //d3.select(btn).attr("transform") = (translate(0,0));
                       
         //var tr = d3.transform(d3.select(this).attr("transform"));
         //var btnx = tr.translate[0];
@@ -35,10 +37,14 @@ window.addEventListener('load', function () {
             btnbg.style('fill', '#ffcb6e');
         });
         
-        btn.on('mouseup', function () {
+        btn.on('mouseup', release);
+        btn.on('touchend', release);
+        
+        function release () {
             btnbg.style('fill', '#ffb329');
             
-            var newTransform = d3.select(this).attr("transform").replace(/\([^,]+,/, "(" + 200 + ",");
+            var newTransform = d3.select(this).attr("transform").replace(/\([^,]+,/, "(" + 0 + ",");
+            
             btn
                 .transition()
                 .duration(500)
@@ -47,25 +53,27 @@ window.addEventListener('load', function () {
             
             pArea
                 .transition()
-                .data(progress)
+                //.data(progress)
                 .duration(100)
                 .ease('ease-out')
-                //.attr('width', +pArea.attr('width'))
+                .attr('width', +pArea.attr('width'))
+                /*
                 .attr("width", function(d) {
-		    		return Math.min(d, 400 - 4); // 0 ... 400
-		    	});
-                .style('opacity', 0.15);
+		    		return Math.min(d, 400 - 4);
+		    	})
+		    	*/
+		    	.style('opacity', 0.15);
             
             pMarker
             	.transition()
-		    	.data(progress)
-		    	.duration(400)
+		    	.duration(100)
 		    	.ease('ease-out')
-		    	.attr("x", function(d) {
-		    		return Math.min(d, 400 - 4); // 0 ... 400
+		    	.attr("x", function() {
+		    		return Math.min(400 - 4, +pArea.attr('width'));
 		    	});
             
-        });
+        }
+        
         /*
         pArea
         	.data(progress)
@@ -104,29 +112,32 @@ window.addEventListener('load', function () {
         //var currTransform = d3.transform(d3.select(this).attr("transform"));
         //var currX = currTransform.translate[0];
         
-        var newX = d3.event.x - 2870;
-        newX = Math.max(-2580, Math.min(-2300, newX));
+        var newX = d3.event.x - 200;
+        newX = Math.max(-160, Math.min(160, newX));
         
         var newTransform = d3.select(this).attr("transform").replace(/\([^,]+,/, "(" + newX + ",");
         d3.select(this).attr("transform", newTransform);
         
-        var scrollPos = (newX + 2440) / 140;
+        var scrollPos = newX / 160;
         
         scrollTime(scrollPos);
+        
+        /*
         if (scrollPos > 0.8)
             showNext(true)
         else if (scrollPos < -0.8)
             showNext(false);                
-        
+        */
         log("D3:  " + d3.event.x);
         log("NEWX:  " + newX);
+        log("SCROLLP:  " + scrollPos);
     }
     
     function scrollTime(pos) {
         // set scroll direction
         var target = 0;
         if (pos > 0) target = 400;
-        
+                
         // normalize value range
         f = Math.abs(pos) * 0.7 + 0.1;
         
@@ -137,9 +148,9 @@ window.addEventListener('load', function () {
         
         pArea
             .transition()
-            .duration(60000 * Math.pow(f-1,6) + 200)
+            .duration(60000 * Math.pow(f-1,8) + 200)
             .ease('linear')
-            .attr('width', target);                
+            .attr('width', target);
     }
     
     function showNext(isNext) {

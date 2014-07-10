@@ -1,0 +1,42 @@
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="400" height="640" id="svg4870" version="1.1" inkscape:version="0.48+devel r13447 custom">
+  <defs id="defs4872"/>
+  <metadata id="metadata4875">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g inkscape:label="Ebene 1" inkscape:groupmode="layer" id="layer1" transform="translate(-240,-129.50501)">
+    <rect style="color:#000000;fill:#1b1b1b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="view" width="400" height="640" x="240" y="129.5" inkscape:label="#rect4674"/>
+    <image sodipodi:absref="/home/tobias/design/timescroll/onthegrid.png" xlink:href="onthegrid.png" width="400" height="400" id="image4676" x="240" y="250.3"/>
+    <rect y="649.5" x="240" height="120" width="400" id="rect4678" style="color:#000000;fill:#1b1b1b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"/>
+    <rect y="129.5" x="240" height="120.8" width="337.2" id="progress-area" style="opacity:0.15;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" inkscape:label="#rect4680"/>
+    <rect style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="scrollbar" width="320" height="-4" x="280" y="711.5" inkscape:label="#rect4682"/>
+    <rect y="-581.2" x="-250.3" height="4" width="120.8" id="progress-marker" style="color:#000000;fill:#ffb329;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" transform="matrix(0,-1,-1,0,0,0)" inkscape:label="#rect4684"/>
+    <g id="button" transform="translate(-2440,-712.85727)" inkscape:label="#button">
+      <path sodipodi:type="arc" style="color:#000000;fill:#ffb329;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="button-bg" sodipodi:cx="185" sodipodi:cy="590" sodipodi:rx="40" sodipodi:ry="40" d="m 225 590 a 40 40 0 0 1 -40 40 40 40 0 0 1 -40 -40 40 40 0 0 1 40 -40 40 40 0 0 1 40 40 z" transform="matrix(1.125,0,0,1.125,2671.875,758.61218)" inkscape:label="#path4692"/>
+      <g transform="translate(0,750)" id="g4694" style="fill:#1b1b1b;fill-opacity:1">
+        <rect y="652.4" x="2865" height="40" width="10" id="rect4696" style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"/>
+        <rect style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="rect4698" width="10" height="40" x="2885" y="652.4"/>
+      </g>
+    </g>
+    <text sodipodi:linespacing="125%" id="text4700" y="219.5" x="260" style="font-size:26px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Roboto Condensed;-inkscape-font-specification:'Roboto Condensed,'" xml:space="preserve"><tspan y="219.5" x="260" id="tspan4702" sodipodi:role="line">Episode 68 - The Distant Future</tspan></text>
+    <text xml:space="preserve" style="font-size:30px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Roboto;-inkscape-font-specification:Roboto" x="260" y="179.5" id="text4704" sodipodi:linespacing="125%"><tspan sodipodi:role="line" id="tspan4706" x="260" y="179.5">On The Grid</tspan></text>
+    <rect style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.18000004;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#ffbb3f;fill-opacity:1;fill-rule:nonzero;stroke:#ffb329;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 4;stroke-dashoffset:2.20000005;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" id="rect3369" width="-193.1" height="518" x="1198" y="129.5"/>
+    <g id="next" transform="matrix(0.69124679,0,0,0.69124679,-1639.1394,-1439.0069)" style="opacity:0.7" inkscape:label="#g4264">
+      <image width="400" height="400" xlink:href="philosophizethis.jpg" id="image3869-5-4" x="3297.1" y="2504.2"/>
+      <rect y="2383.4" x="3297.1" height="120.8" width="400" id="rect4229-1" style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#242b35;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"/>
+      <text sodipodi:linespacing="125%" id="text4192-7" y="2473.4" x="3317.1" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:125%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed,';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none" xml:space="preserve"><tspan y="2473.4" x="3317.1" id="tspan4194-4" sodipodi:role="line">Episode 15: Plotinus</tspan></text>
+      <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30px;line-height:125%;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none" x="3317.1" y="2433.4" id="text4196-6" sodipodi:linespacing="125%"><tspan sodipodi:role="line" id="tspan4198-0" x="3317.1" y="2433.4">Philosophize This!</tspan></text>
+    </g>
+    <g id="prev" transform="matrix(0.69124642,0,0,0.69124642,-662.57033,62.973807)" style="opacity:0.7" inkscape:label="#g3417">
+      <rect style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#27054c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate" id="rect3689" width="400" height="120.8" x="905.7" y="210.5"/>
+      <image width="400" height="400" xlink:href="vergecast.png" id="image4344-3" x="905.7" y="331.3"/>
+      <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:125%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed,';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none" x="925.7" y="300.5" id="text4322" sodipodi:linespacing="125%"><tspan sodipodi:role="line" id="tspan4324" x="925.7" y="300.5">105 - Instagram Direct, Nexus TV...</tspan></text>
+      <text sodipodi:linespacing="125%" id="text4326" y="260.5" x="925.7" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30px;line-height:125%;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none" xml:space="preserve"><tspan y="260.5" x="925.7" id="tspan4328" sodipodi:role="line">The Vergecast</tspan></text>
+    </g>
+  </g>
+</svg>
