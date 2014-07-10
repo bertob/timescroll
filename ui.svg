@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70710678"
-     inkscape:cx="314.5745"
-     inkscape:cy="297.2643"
+     inkscape:cx="641.04957"
+     inkscape:cy="307.73321"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -35,11 +35,11 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="792"
-     inkscape:window-height="637"
+     inkscape:window-width="1366"
+     inkscape:window-height="741"
      inkscape:window-x="0"
-     inkscape:window-y="91"
-     inkscape:window-maximized="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
@@ -138,7 +138,7 @@
          sodipodi:role="line">Episode 68 - The Distant Future</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30px;line-height:125%;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:30px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;"
        x="20"
        y="50"
        id="text4704"
@@ -157,7 +157,7 @@
        transform="scale(-1,1)" />
     <g
        id="prevnext"
-       style="opacity:0.4"
+       style="opacity:0.2"
        transform="translate(-1e-5,0)">
       <g
          inkscape:label="#g4264"
@@ -167,6 +167,7 @@
         <image
            sodipodi:absref="/home/tobias/design/timescroll/philosophizethis.jpg"
            xlink:href="philosophizethis.jpg"
+           style=""
            y="2504.1899"
            x="3297.1428"
            id="image3869-5-4"
@@ -195,7 +196,7 @@
            id="text4196-6"
            y="2433.3916"
            x="3317.1428"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30px;line-height:125%;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:30px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;"
            xml:space="preserve"><tspan
              y="2433.3916"
              x="3317.1428"
@@ -217,6 +218,7 @@
         <image
            sodipodi:absref="/home/tobias/design/timescroll/vergecast.png"
            xlink:href="vergecast.png"
+           style=""
            y="331.33282"
            x="905.71429"
            id="image4344-3"
@@ -235,7 +237,7 @@
              sodipodi:role="line">105 - Instagram Direct, Nexus TV...</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30px;line-height:125%;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:30px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;"
            x="925.71429"
            y="260.53448"
            id="text4326"
