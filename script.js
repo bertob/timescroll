@@ -126,7 +126,9 @@ window.addEventListener('load', function () {
         if (scrollPos > 0.8)
             showNext(true)
         else if (scrollPos < -0.8)
-            showNext(false);
+            showNext(false)
+        else
+        	hideNext();
         
         log("D3:  " + d3.event.x);
         log("NEWX:  " + newX);
@@ -169,13 +171,23 @@ window.addEventListener('load', function () {
         */
         //log("           " + d3.select(this).attr("transform"))
         var newTransform = nextGroup.attr("transform").replace(/\([^,]+,/, "(" + newX + ",");
-        //d3.select(this).attr("transform", newTransform);
         
         nextGroup
             .transition()
-            .duration(400)
+            .duration(250)
             .ease('ease-out')
             .style('opacity', 0.89)
+            .attr('transform', newTransform);
+    }
+    
+    function hideNext() {
+    	var newTransform = nextGroup.attr("transform").replace(/\([^,]+,/, "(" + -0.00001 + ",");
+        
+        nextGroup
+            .transition()
+            .duration(150)
+            .ease('ease-out')
+            .style('opacity', 0.2)
             .attr('transform', newTransform);
     }
     
