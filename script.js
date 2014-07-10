@@ -1,5 +1,7 @@
+var progress = [200]; // 0 ... 400
+
 window.addEventListener('load', function () {
-                     
+    
     d3.xml('ui.svg', 'image/svg+xml', function (error, data) {
         
         // add SVG to document
@@ -21,7 +23,8 @@ window.addEventListener('load', function () {
         
         var prevItem = svg.select("#prev");
         var nextItem = svg.select("#next");
-                        
+               
+                      
         //var tr = d3.transform(d3.select(this).attr("transform"));
         //var btnx = tr.translate[0];
         
@@ -35,7 +38,7 @@ window.addEventListener('load', function () {
         btn.on('mouseup', function () {
             btnbg.style('fill', '#ffb329');
             
-            var newTransform = d3.select(this).attr("transform").replace(/\([^,]+,/, "(" + -2440 + ",");
+            var newTransform = d3.select(this).attr("transform").replace(/\([^,]+,/, "(" + 200 + ",");
             btn
                 .transition()
                 .duration(500)
@@ -44,11 +47,49 @@ window.addEventListener('load', function () {
             
             pArea
                 .transition()
+                .data(progress)
                 .duration(100)
                 .ease('ease-out')
-                .attr('width', +pArea.attr('width'))
+                //.attr('width', +pArea.attr('width'))
+                .attr("width", function(d) {
+		    		return Math.min(d, 400 - 4); // 0 ... 400
+		    	});
                 .style('opacity', 0.15);
+            
+            pMarker
+            	.transition()
+		    	.data(progress)
+		    	.duration(400)
+		    	.ease('ease-out')
+		    	.attr("x", function(d) {
+		    		return Math.min(d, 400 - 4); // 0 ... 400
+		    	});
+            
         });
+        /*
+        pArea
+        	.data(progress)
+        	.attr("width", function(d) {
+        		return Math.min(d, 400); // 0 ... 400
+        	});
+        
+        pMarker
+        	.data(progress)
+        	.attr("x", function(d) {
+        		return Math.min(d, 400 - 4); // 0 ... 400
+        	});
+        */
+        	/*
+        	.style("fill", function(d) {
+        		log("WWWW  " + d);
+        		if (d > 30) {
+        			return "red";
+        		}
+        		else {
+        			return "blue";
+        		}
+        		
+        	});*/
     
     var drag = d3.behavior.drag()
         .on("drag", dragmove);
@@ -84,7 +125,7 @@ window.addEventListener('load', function () {
     function scrollTime(pos) {
         // set scroll direction
         var target = 0;
-        if (pos > 0) target = 396;
+        if (pos > 0) target = 400;
         
         // normalize value range
         f = Math.abs(pos) * 0.7 + 0.1;
@@ -109,8 +150,10 @@ window.addEventListener('load', function () {
         } else {
             
         }
-        /*
+        
+        //var currTransform = d3.transform(d3.select(nextItem).attr("transform"));
         var currTransform = d3.transform(d3.select(nextItem).attr("transform"));
+        /*
         var currX = currTransform.translate[0];
         var currY = currTransform.translate[1];
         */

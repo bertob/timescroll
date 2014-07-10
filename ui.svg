@@ -11,7 +11,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="400"
-   height="640.00006"
+   height="640"
    id="svg4870"
    version="1.1"
    inkscape:version="0.48+devel r13447 custom"
@@ -25,21 +25,21 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="554.93864"
-     inkscape:cy="303.9155"
+     inkscape:zoom="1"
+     inkscape:cx="452.06714"
+     inkscape:cy="503.58557"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="true"
+     showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="594"
-     inkscape:window-height="377"
-     inkscape:window-x="361"
-     inkscape:window-y="161"
-     inkscape:window-maximized="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="741"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
@@ -57,7 +57,9 @@
      inkscape:snap-global="true">
     <inkscape:grid
        type="xygrid"
-       id="grid3367" />
+       id="grid3367"
+       originx="240"
+       originy="-130.50505" />
   </sodipodi:namedview>
   <metadata
      id="metadata4875">
@@ -67,122 +69,84 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-240,-129.50501)">
+     id="layer1">
     <rect
-       style="color:#000000;fill:#1b1b1b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#1b1b1b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
        id="view"
        width="400"
        height="640"
-       x="240"
-       y="129.50505"
+       x="0"
+       y="0"
        inkscape:label="#rect4674" />
     <image
        sodipodi:absref="/home/tobias/design/timescroll/onthegrid.png"
        xlink:href="onthegrid.png"
-       width="400"
-       height="400"
+       y="120.79834"
+       x="0"
        id="image4676"
-       x="240"
-       y="250.30339" />
+       height="400"
+       width="400" />
     <rect
-       y="649.50507"
-       x="240"
+       y="520"
+       x="0"
        height="120"
        width="400"
        id="rect4678"
-       style="color:#000000;fill:#1b1b1b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#1b1b1b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate" />
     <rect
-       y="129.50505"
-       x="240"
+       y="0"
+       x="0"
        height="120.79838"
        width="337.18262"
        id="progress-area"
-       style="opacity:0.15;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.15;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
        inkscape:label="#rect4680" />
     <rect
        transform="scale(1,-1)"
-       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
        id="scrollbar"
        width="320"
        height="3.9999993"
-       x="280"
-       y="-711.50507"
+       x="40"
+       y="-582"
        inkscape:label="#rect4682" />
     <rect
-       y="-581.18262"
-       x="-250.30339"
-       height="3.9999993"
-       width="120.79838"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#ffb329;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 4;stroke-dashoffset:2.20000005;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="progress-marker"
-       style="color:#000000;fill:#ffb329;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       transform="matrix(0,-1,-1,0,0,0)"
-       inkscape:label="#rect4684" />
-    <g
-       id="button"
-       transform="translate(-2440,-712.85727)"
-       inkscape:label="#button">
-      <path
-         sodipodi:type="arc"
-         style="color:#000000;fill:#ffb329;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-         id="button-bg"
-         sodipodi:cx="185"
-         sodipodi:cy="590"
-         sodipodi:rx="40"
-         sodipodi:ry="40"
-         d="m 225,590 a 40,40 0 0 1 -40,40 40,40 0 0 1 -40,-40 40,40 0 0 1 40,-40 40,40 0 0 1 40,40 z"
-         transform="matrix(1.125,0,0,1.125,2671.875,758.61218)"
-         inkscape:label="#path4692" />
-      <g
-         transform="translate(0,750)"
-         id="g4694"
-         style="fill:#1b1b1b;fill-opacity:1">
-        <rect
-           transform="translate(780,92.362183)"
-           y="560"
-           x="2085"
-           height="40"
-           width="10"
-           id="rect4696"
-           style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-        <rect
-           style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-           id="rect4698"
-           width="10"
-           height="40"
-           x="2885"
-           y="652.36218" />
-      </g>
-    </g>
+       width="4"
+       height="120.79834"
+       x="337.18262"
+       y="0"
+       inkscape:label="#rect3367" />
     <text
        sodipodi:linespacing="125%"
        id="text4700"
-       y="219.50505"
-       x="260"
-       style="font-size:26px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Roboto Condensed;-inkscape-font-specification:'Roboto Condensed,'"
+       y="90"
+       x="20"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:125%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed,';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         y="219.50505"
-         x="260"
+         y="90"
+         x="20"
          id="tspan4702"
          sodipodi:role="line">Episode 68 - The Distant Future</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:30px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Roboto;-inkscape-font-specification:Roboto"
-       x="260"
-       y="179.50505"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30px;line-height:125%;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="20"
+       y="50"
        id="text4704"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4706"
-         x="260"
-         y="179.50505">On The Grid</tspan></text>
+         x="20"
+         y="50">On The Grid</tspan></text>
     <rect
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.18000004;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#ffbb3f;fill-opacity:1;fill-rule:nonzero;stroke:#ffb329;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 4;stroke-dashoffset:2.20000005;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="rect3369"
@@ -193,16 +157,17 @@
        transform="scale(-1,1)" />
     <g
        id="next"
-       transform="matrix(0.69124679,0,0,0.69124679,-1639.1394,-1439.0069)"
+       transform="matrix(0.69124679,0,0,0.69124679,-1879.1394,-1568.512)"
        style="opacity:0.7"
        inkscape:label="#g4264">
       <image
-         width="400"
-         height="400"
+         sodipodi:absref="/home/tobias/design/timescroll/philosophizethis.jpg"
          xlink:href="philosophizethis.jpg"
-         id="image3869-5-4"
+         y="2504.1899"
          x="3297.1428"
-         y="2504.1899" />
+         id="image3869-5-4"
+         height="400"
+         width="400" />
       <rect
          y="2383.3916"
          x="3297.1428"
@@ -235,7 +200,7 @@
     </g>
     <g
        id="prev"
-       transform="matrix(0.69124642,0,0,0.69124642,-662.57033,62.973807)"
+       transform="matrix(0.69124642,0,0,0.69124642,-902.57033,-66.531244)"
        style="opacity:0.7"
        inkscape:label="#g3417">
       <rect
@@ -246,12 +211,13 @@
          x="905.71429"
          y="210.53447" />
       <image
-         width="400"
-         height="400"
+         sodipodi:absref="/home/tobias/design/timescroll/vergecast.png"
          xlink:href="vergecast.png"
-         id="image4344-3"
+         y="331.33282"
          x="905.71429"
-         y="331.33282" />
+         id="image4344-3"
+         height="400"
+         width="400" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26px;line-height:125%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed,';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none"
@@ -274,6 +240,58 @@
            x="925.71429"
            id="tspan4328"
            sodipodi:role="line">The Vergecast</tspan></text>
+    </g>
+    <g
+       id="button"
+       inkscape:label="#g3411">
+      <g
+         transform="translate(0,1.2207031e-4)"
+         style="fill:#ea1616"
+         id="g3386">
+        <circle
+           d="m 245,579.99988 a 45,45 0 0 1 -45,45 45,45 0 0 1 -45,-45 45,45 0 0 1 45,-45 45,45 0 0 1 45,45 z"
+           r="45"
+           cy="579.99988"
+           cx="200"
+           inkscape:label="#path4692"
+           id="button-bg"
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ea1616;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate" />
+        <rect
+           y="559.99988"
+           x="185"
+           height="40"
+           width="10"
+           id="rect4696"
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ea1616;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate" />
+        <rect
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ea1616;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
+           id="rect4698"
+           width="10"
+           height="40"
+           x="205"
+           y="559.99988" />
+      </g>
+      <circle
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ffb329;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
+         id="button-bg-1"
+         inkscape:label="#path4692"
+         cx="200"
+         cy="580"
+         r="45" />
+      <rect
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
+         id="rect4696-3"
+         width="10"
+         height="40"
+         x="185"
+         y="560" />
+      <rect
+         y="560"
+         x="205"
+         height="40"
+         width="10"
+         id="rect4698-0"
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate" />
     </g>
   </g>
 </svg>
