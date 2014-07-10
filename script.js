@@ -122,12 +122,12 @@ window.addEventListener('load', function () {
         
         scrollTime(scrollPos);
         
-        /*
+        
         if (scrollPos > 0.8)
             showNext(true)
         else if (scrollPos < -0.8)
-            showNext(false);                
-        */
+            showNext(false);
+        
         log("D3:  " + d3.event.x);
         log("NEWX:  " + newX);
         log("SCROLLP:  " + scrollPos);
@@ -156,25 +156,26 @@ window.addEventListener('load', function () {
     function showNext(isNext) {
         log("NEEEEEEEEEEEEEEEEEXT!");
         
+        var newX = 170;
         if (isNext) {
-            
-        } else {
-            
+            newX = -newX;
         }
         
         //var currTransform = d3.transform(d3.select(nextItem).attr("transform"));
-        var currTransform = d3.transform(d3.select(nextItem).attr("transform"));
+        //var currTransform = d3.transform(d3.select(nextItem).attr("transform"));
         /*
         var currX = currTransform.translate[0];
         var currY = currTransform.translate[1];
         */
-        var newTransform = d3.select(nextItem).attr("transform").replace(/\([^,]+,/, "(" + -2440 + ",");
+        //log("           " + d3.select(this).attr("transform"))
+        var newTransform = nextGroup.attr("transform").replace(/\([^,]+,/, "(" + newX + ",");
         //d3.select(this).attr("transform", newTransform);
         
-        nextItem
+        nextGroup
             .transition()
-            .duration()
-            .ease('linear')
+            .duration(400)
+            .ease('ease-out')
+            .style('opacity', 0.89)
             .attr('transform', newTransform);
     }
     

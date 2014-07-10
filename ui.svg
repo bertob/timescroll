@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.5"
-     inkscape:cx="905.7292"
-     inkscape:cy="286.90069"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="314.5745"
+     inkscape:cy="297.2643"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -35,11 +35,11 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1366"
-     inkscape:window-height="741"
+     inkscape:window-width="792"
+     inkscape:window-height="637"
      inkscape:window-x="0"
-     inkscape:window-y="27"
-     inkscape:window-maximized="1"
+     inkscape:window-y="91"
+     inkscape:window-maximized="0"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
@@ -69,7 +69,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -88,11 +88,11 @@
     <image
        sodipodi:absref="/home/tobias/design/timescroll/onthegrid.png"
        xlink:href="onthegrid.png"
-       y="120.79834"
-       x="0"
-       id="image4676"
+       width="400"
        height="400"
-       width="400" />
+       id="image4676"
+       x="0"
+       y="120.79834" />
     <rect
        y="520"
        x="0"
@@ -156,21 +156,22 @@
        y="129.505"
        transform="scale(-1,1)" />
     <g
-       id="g3422"
+       id="prevnext"
+       style="opacity:0.4"
        transform="translate(-1e-5,0)">
       <g
          inkscape:label="#g4264"
-         style="opacity:0.7"
+         style="opacity:1"
          transform="matrix(0.69124679,0,0,0.69124679,-1879.1394,-1568.512)"
          id="next">
         <image
            sodipodi:absref="/home/tobias/design/timescroll/philosophizethis.jpg"
            xlink:href="philosophizethis.jpg"
-           width="400"
-           height="400"
-           id="image3869-5-4"
+           y="2504.1899"
            x="3297.1428"
-           y="2504.1899" />
+           id="image3869-5-4"
+           height="400"
+           width="400" />
         <rect
            style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#242b35;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
            id="rect4229-1"
@@ -203,8 +204,8 @@
       </g>
       <g
          inkscape:label="#g3417"
-         style="opacity:0.7"
-         transform="matrix(0.69124642,0,0,0.69124642,-902.57033,-66.531244)"
+         style="opacity:1"
+         transform="matrix(0.69124642,0,0,0.69124642,-902.57034,-66.531244)"
          id="prev">
         <rect
            y="210.53447"
@@ -216,11 +217,11 @@
         <image
            sodipodi:absref="/home/tobias/design/timescroll/vergecast.png"
            xlink:href="vergecast.png"
-           width="400"
-           height="400"
-           id="image4344-3"
+           y="331.33282"
            x="905.71429"
-           y="331.33282" />
+           id="image4344-3"
+           height="400"
+           width="400" />
         <text
            sodipodi:linespacing="125%"
            id="text4322"
@@ -259,7 +260,8 @@
            cx="200"
            inkscape:label="#path4692"
            id="button-bg"
-           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ea1616;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate" />
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ea1616;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
+           d="m 245,579.99988 a 45,45 0 0 1 -45,45 45,45 0 0 1 -45,-45 45,45 0 0 1 45,-45 45,45 0 0 1 45,45 z" />
         <rect
            y="559.99988"
            x="185"
@@ -281,7 +283,8 @@
          inkscape:label="#path4692"
          cx="200"
          cy="580"
-         r="45" />
+         r="45"
+         d="m 245,580 a 45,45 0 0 1 -45,45 45,45 0 0 1 -45,-45 45,45 0 0 1 45,-45 45,45 0 0 1 45,45 z" />
       <rect
          style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
          id="rect4696-3"
