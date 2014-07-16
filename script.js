@@ -51,6 +51,7 @@ window.addEventListener('load', function () {
         var btn = svg.select("#button");
         //var sb = svg.select("#scrollbar");        
         var pCircle = svg.select("#progress-circle");
+        var bubble = svg.select("#bubble");
         var timer = svg.select("#addtimer");
         var pArea = svg.select("#progress-area");
         var pMarker = svg.select("#progress-marker");
@@ -79,8 +80,7 @@ window.addEventListener('load', function () {
             //btnbg.style('fill', '#ffb329');
             initialWidth = +pArea.attr('width');
             
-            var newTransform = d3.select(this).attr("transform").replace(/\([^,]+,/, "(" + 0 + ",");
-            
+            var newTransform = d3.select(this).attr("transform").replace(/\([^,]+,/, "(" + 0 + ",");            
             btn
                 .transition()
                 .duration(500)
@@ -93,7 +93,6 @@ window.addEventListener('load', function () {
                 .duration(100)
                 .ease('ease-out')
                 .attr('width', +pArea.attr('width'))
-
 		    	.style('opacity', 0.15);
             
             pMarker
@@ -103,6 +102,16 @@ window.addEventListener('load', function () {
 		    	.attr("x", function() {
 		    		return Math.min(400 - 4, +pArea.attr('width'));
 		    	});
+		    	
+		    timer.text("00:00");
+		    
+		    bubble
+		    	.transition()
+		    	.duration(70)
+		    	.ease('linear')
+		    	.style('opacity', 0)
+		    	.attr('transform', 'translate(198.18182373046875,317.0909118652344)scale(0.009090900421142578,0.009090900421142578)');
+		    	//.attr('transform', 'matrix(0.0090909,0,0,0.0090909,198.18182,317.09091)');
             
         }        
     
@@ -138,31 +147,21 @@ window.addEventListener('load', function () {
 		    totalTime = episodes[0].duration;
 		    newWidth = +pArea.attr('width');
 		    var diffWidth = newWidth - initialWidth;
-		    var diffTime = (diffWidth / totalWidth) * totalTime;
-		    //log(+pTime.attr('text'));
-		    //log(+title.attr('text'));
-		    log("------ " + diffTime);
-		    /*
-		    d3.select(pTime)
-				.data(diffTime)
-				.text(function(d) {
-					return "+00:" + d;
-				});
-		    */
-		    //d3.select("pTime").text("+" + Math.floor(diffTime / 60) + diffTime % 60);
-		    //svg.select("progress-time").text("+");
-		    //d3.select(progress-time).text("LÖLOL");
-		    //d3.select(title).text("LÖLOL");
+		    var diffTime = (diffWidth / totalWidth) * totalTime;		    
 		    var newTimerString = Math.floor(Math.abs(diffTime) / 60) + ":" + Math.floor(Math.abs(diffTime) % 60);
-		    if (diffTime > 0) {
-		    	newTimerString = "+" + newTimerString;
-		    } else {
-		    	newTimerString = "-" + newTimerString;
-		    }
+		    if (diffTime > 0) newTimerString = "+" + newTimerString
+		    else newTimerString = "-" + newTimerString;
 		    
 		    timer.text(newTimerString);
 		    
-		    // preview prev/next elements		    
+		    bubble
+		    	.transition()
+		    	.duration(80)
+		    	.ease('ease-in')
+		    	.style('opacity', 1)
+		    	.attr('transform', 'translate(0, 0)');
+		    
+		    // preview prev/next elements	    
 		    if (scrollPos > 0.9)
 		        showNext(true)
 		    else if (scrollPos < -0.9)

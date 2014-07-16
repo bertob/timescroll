@@ -25,12 +25,12 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.5"
-     inkscape:cx="-77.4016"
-     inkscape:cy="350.35896"
+     inkscape:zoom="16"
+     inkscape:cx="216.41745"
+     inkscape:cy="329.76484"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -54,7 +54,7 @@
      inkscape:snap-smooth-nodes="true"
      inkscape:snap-midpoints="true"
      inkscape:object-nodes="true"
-     inkscape:snap-global="true">
+     inkscape:snap-global="false">
     <inkscape:grid
        type="xygrid"
        id="grid3367"
@@ -88,11 +88,11 @@
     <image
        sodipodi:absref="/home/tobias/design/timescroll/img/onthegrid.png"
        xlink:href="img/onthegrid.png"
-       y="120"
-       x="0"
-       id="image4676"
+       width="400"
        height="400"
-       width="400" />
+       id="image4676"
+       x="0"
+       y="120" />
     <rect
        y="520"
        x="0"
@@ -145,11 +145,11 @@
         <image
            sodipodi:absref="/home/tobias/design/timescroll/img/philosophizethis.jpg"
            xlink:href="img/philosophizethis.jpg"
-           width="400"
-           height="400"
-           id="image3869-5-4"
+           y="2504.1899"
            x="3297.1428"
-           y="2504.1899" />
+           id="image3869-5-4"
+           height="400"
+           width="400" />
         <rect
            style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#242b35;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
            id="rect4229-1"
@@ -195,11 +195,11 @@
         <image
            sodipodi:absref="/home/tobias/design/timescroll/img/vergecast.png"
            xlink:href="img/vergecast.png"
-           width="400"
-           height="400"
-           id="image4344-3"
+           y="331.33282"
            x="905.71429"
-           y="331.33282" />
+           id="image4344-3"
+           height="400"
+           width="400" />
         <text
            sodipodi:linespacing="125%"
            id="text4322"
@@ -288,11 +288,11 @@
     <image
        sodipodi:absref="/home/tobias/design/timescroll/img/onthegrid.png"
        xlink:href="img/onthegrid.png"
-       width="400"
-       height="400"
-       id="image4676-7"
+       y="859.99994"
        x="10"
-       y="859.99994" />
+       id="image4676-7"
+       height="400"
+       width="400" />
     <rect
        y="740"
        x="10"
@@ -508,21 +508,23 @@
          x="199.88672"
          y="67">Episode 70: Pinspiration</tspan></text>
     <g
-       id="g3501"
-       transform="translate(-429,-301.00012)">
+       id="bubble"
+       inkscape:label="#g3408"
+       transform="matrix(0.0090909,0,0,0.0090909,198.18182,317.09091)"
+       style="opacity:0">
       <circle
          id="progress-circle"
          style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.85;fill:#1b1b1b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
-         cx="629"
-         cy="621.00012"
+         cx="200"
+         cy="320"
          r="110.00012"
-         d="M 739.00012,621.00012 A 110.00012,110.00012 0 0 1 629,731.00024 110.00012,110.00012 0 0 1 518.99988,621.00012 110.00012,110.00012 0 0 1 629,511 110.00012,110.00012 0 0 1 739.00012,621.00012 Z"
-         inkscape:label="#circle3474" />
+         inkscape:label="#circle3474"
+         d="M 310.00012,320 A 110.00012,110.00012 0 0 1 200,430.00012 110.00012,110.00012 0 0 1 89.999878,320 110.00012,110.00012 0 0 1 200,209.99988 110.00012,110.00012 0 0 1 310.00012,320 Z" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none"
-         x="629"
-         y="636.00006"
+         x="200"
+         y="334.99994"
          id="addtimer"
          sodipodi:linespacing="125%"
          inkscape:label="#text3480">+04:49</text>
