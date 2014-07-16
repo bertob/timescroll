@@ -2,6 +2,40 @@ var progress = [200]; // 0 ... 400
 
 window.addEventListener('load', function () {
     
+		
+	var episodes = [
+		{
+			title: 'Icon For Access',
+			img: '99pi.png',
+			duration: 2000
+		},
+		{
+			title: 'Episode 70: Pinspiration',
+			img: 'onthegrid.png',
+			duration: 3200
+		},
+		{
+			title: 'Episode 28 - Descartes Pt. 1',
+			img: 'philosophizethis.png',
+			duration: 2800
+		},
+		{
+			title: '105 - Instagram Direct, Nexus TV, Spotify',
+			img: 'vergecast.png',
+			duration: 3800
+		},
+		{
+			title: 'Call Now!',
+			img: '99pi.png',
+			duration: 1800
+		},
+		{
+			title: 'Episode 15: Plotinus',
+			img: 'philosophizethis.png',
+			duration: 2700
+		}];
+
+    
     d3.xml('ui.svg', 'image/svg+xml', function (error, data) {
         
         // add SVG to document
@@ -11,37 +45,39 @@ window.addEventListener('load', function () {
         var svg = d3.select('svg');
         
         var view = d3.select('#view');
-        var w = +view.attr('width');
-        var h = +view.attr('height');
-        
+        //var w = +view.attr('width');
+        //var h = +view.attr('height');
+        //var btn = svg.select("#title");
         var btn = svg.select("#button");
-        var btnbg = svg.select("#button-bg");
-        var sb = svg.select("#scrollbar");
-        
+        //var sb = svg.select("#scrollbar");        
+        var pCircle = svg.select("#progress-circle");
+        var timer = svg.select("#addtimer");
         var pArea = svg.select("#progress-area");
         var pMarker = svg.select("#progress-marker");
         
-        var prevItem = svg.select("#prev");
-        var nextItem = svg.select("#next");
         var nextGroup = svg.select("#prevnext");
+        
+        // variables
+        var initialWidth = +pArea.attr('width');
+        var totalTime, totalWidth, newWidth;
+        totalWidth = 400;
                
         //d3.select(btn).attr("transform") = (translate(0,0));
                       
         //var tr = d3.transform(d3.select(this).attr("transform"));
         //var btnx = tr.translate[0];
-        
-        btn.on('mouseover', function () {
-        });                
+                
         
         btn.on('mousedown', function () {
-            btnbg.style('fill', '#ffcb6e');
+            //btnbg.style('fill', '#ffcb6e');
         });
         
         btn.on('mouseup', release);
         btn.on('touchend', release);
         
         function release () {
-            btnbg.style('fill', '#ffb329');
+            //btnbg.style('fill', '#ffb329');
+            initialWidth = +pArea.attr('width');
             
             var newTransform = d3.select(this).attr("transform").replace(/\([^,]+,/, "(" + 0 + ",");
             
@@ -90,14 +126,43 @@ window.addEventListener('load', function () {
 		    }
 		    */
 		    
+		    // move scrubber
 		    var newTransform = d3.select(this).attr("transform").replace(/\([^,]+,/, "(" + newX + ",");
 		    d3.select(this).attr("transform", newTransform);
-		    
+		    		    
+		    // move progress bar
 		    var scrollPos = newX / 160;
-		    
 		    scrollTime(scrollPos);
 		    
+		    // update progress timer
+		    totalTime = episodes[0].duration;
+		    newWidth = +pArea.attr('width');
+		    var diffWidth = newWidth - initialWidth;
+		    var diffTime = (diffWidth / totalWidth) * totalTime;
+		    //log(+pTime.attr('text'));
+		    //log(+title.attr('text'));
+		    log("------ " + diffTime);
+		    /*
+		    d3.select(pTime)
+				.data(diffTime)
+				.text(function(d) {
+					return "+00:" + d;
+				});
+		    */
+		    //d3.select("pTime").text("+" + Math.floor(diffTime / 60) + diffTime % 60);
+		    //svg.select("progress-time").text("+");
+		    //d3.select(progress-time).text("LÖLOL");
+		    //d3.select(title).text("LÖLOL");
+		    var newTimerString = Math.floor(Math.abs(diffTime) / 60) + ":" + Math.floor(Math.abs(diffTime) % 60);
+		    if (diffTime > 0) {
+		    	newTimerString = "+" + newTimerString;
+		    } else {
+		    	newTimerString = "-" + newTimerString;
+		    }
 		    
+		    timer.text(newTimerString);
+		    
+		    // preview prev/next elements		    
 		    if (scrollPos > 0.9)
 		        showNext(true)
 		    else if (scrollPos < -0.9)
