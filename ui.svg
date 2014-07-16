@@ -87,7 +87,7 @@
        inkscape:label="#rect4674" />
     <image
        sodipodi:absref="/home/tobias/design/timescroll/onthegrid.png"
-       xlink:href="onthegrid.png"
+       xlink:href="img/onthegrid.png"
        width="400"
        height="400"
        id="image4676"
@@ -166,7 +166,7 @@
          id="next">
         <image
            sodipodi:absref="/home/tobias/design/timescroll/philosophizethis.jpg"
-           xlink:href="philosophizethis.jpg"
+           xlink:href="img/philosophizethis.jpg"
            style=""
            y="2504.1899"
            x="3297.1428"
@@ -217,7 +217,7 @@
            style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#27054c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate" />
         <image
            sodipodi:absref="/home/tobias/design/timescroll/vergecast.png"
-           xlink:href="vergecast.png"
+           xlink:href="img/vergecast.png"
            style=""
            y="331.33282"
            x="905.71429"
