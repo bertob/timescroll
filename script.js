@@ -1,13 +1,22 @@
-var progress = [200]; // 0 ... 400
-var tesst = 0;
+var currentEpisode = 0;
 
 window.addEventListener('load', function () {
     
 		
 	var episodes = [
 		{
+			title: 'The French Manicure',
+			img: 'fugitivewaves.png',
+			duration: 1900
+		},
+		{
+			title: 'Voyager Found',
+			img: 'truth.png',
+			duration: 3100
+		},
+		{
 			title: 'Icon For Access',
-			img: '99pi.png',
+			img: '99pi.jpg',
 			duration: 2000
 		},
 		{
@@ -17,7 +26,7 @@ window.addEventListener('load', function () {
 		},
 		{
 			title: 'Episode 28 - Descartes Pt. 1',
-			img: 'philosophizethis.png',
+			img: 'philosophizethis.jpg',
 			duration: 2800
 		},
 		{
@@ -27,12 +36,12 @@ window.addEventListener('load', function () {
 		},
 		{
 			title: 'Call Now!',
-			img: '99pi.png',
+			img: '99pi.jpg',
 			duration: 1800
 		},
 		{
 			title: 'Episode 15: Plotinus',
-			img: 'philosophizethis.png',
+			img: 'philosophizethis.jpg',
 			duration: 2700
 		}];
 
@@ -46,6 +55,7 @@ window.addEventListener('load', function () {
         var svg = d3.select('svg');
         
         var view = d3.select('#view');
+        var container = svg.select('#container');
         var episode = d3.select('#episode');
         //var w = +view.attr('width');
         //var h = +view.attr('height');
@@ -69,7 +79,68 @@ window.addEventListener('load', function () {
                       
         //var tr = d3.transform(d3.select(this).attr("transform"));
         //var btnx = tr.translate[0];
-        		
+        
+        // setup
+        
+        var template = svg.select('#episode');
+        for(var i = 0; i < episodes.length; i++) {
+        	log(episodes[i].title);			
+			var svgNode = template.node().cloneNode(true);
+		    
+			var el = d3.select(svgNode);
+			el.attr('transform', 'translate(' + i * 400 + ',0)');
+			el.select('#title').text(episodes[i].title);
+			el.select('#cover').attr("xlink:href", "img/" + episodes[i].img);			
+			//el.select('#Picture').attr('fill', color);
+			
+			// set first element as active
+			if (i === 0) {
+				var pArea = el.select("#progress-area");
+		    	var pMarker = el.select("#progress-marker");
+			}
+			else {
+				el.select("#progress-area").style('opacity', 0);
+		    	el.select("#progress-marker").style('opacity', 0);
+			}
+			
+			container.node().insertBefore(svgNode);
+        }
+        template.style('display', 'none');
+        
+        bubble.attr('transform', 'translate(198.18182373046875,317.0909118652344)scale(0.009090900421142578,0.009090900421142578)');
+        
+        /*
+		var tplElement = svg.select('#episode');
+				
+		var svgNode = tplElement.node().cloneNode(true);
+		
+        tplElement.style('display', 'none');
+		var el = d3.select(svgNode);
+		el.attr('transform', 'translate(100,0)');
+		//el.select('#Picture').attr('fill', color);
+		el.select('#title').text(episodes[4].title);
+		el.select('#cover').attr("xlink:href", "img/" + episodes[4].img);
+		//el.select('#progress-area').attr('fill', 343434);
+        log(container.node());
+        log(tplElement.node());
+        
+		container.node().insertBefore(svgNode);*/
+        
+        /*
+        var eps = episodes.data;
+        for (e in eps) {
+        	alert(1);
+        	var svgNode = episode.node().cloneNode(true);
+			var el = d3.select(svgNode);
+			//el.select('#Picture').attr('fill', color);
+			el.select('#title tspan').text(e.title + "YOOOO");
+			el.select('#progress-area').attr('fill', red);
+			
+			parent.node().insertBefore(svgNode);		    
+        }
+        */
+		
+		
         // behaviour      
         btn.on('mousedown', function () {
             //btnbg.style('fill', '#ffcb6e');
@@ -113,8 +184,8 @@ window.addEventListener('load', function () {
 		    	.ease('linear')
 		    	.style('opacity', 0)
 		    	.attr('transform', 'translate(198.18182373046875,317.0909118652344)scale(0.009090900421142578,0.009090900421142578)');
-		    	//.attr('transform', 'matrix(0.0090909,0,0,0.0090909,198.18182,317.09091)');
             
+            hideNext();
         }        
     
 		var drag = d3.behavior.drag()
@@ -162,10 +233,14 @@ window.addEventListener('load', function () {
 		        showNext(false)
 		    else
 		    	hideNext();
+		    	
 		    
+		    
+		    /*
 		    log("D3:  " + d3.event.x);
 		    log("NEWX:  " + newX);
 		    log("SCROLLP:  " + scrollPos);
+		    */
 		}
 		
 		function scrollTime(pos) {
@@ -198,7 +273,7 @@ window.addEventListener('load', function () {
 		    var secs = Math.floor(Math.abs(diffTime) % 60);
 		    if (secs < 10) secs = "0" + secs;
 		    var newTimerString = mins + ":" + secs;
-		    if (diffTime > 0) newTimerString = "+" + newTimerString
+		    if (diffTime >= 0) newTimerString = "+" + newTimerString
 		    else newTimerString = "-" + newTimerString;
 		    
 		    timer.text(newTimerString);
@@ -206,33 +281,63 @@ window.addEventListener('load', function () {
 		    // periodically call this function to keep the timer updated
 		    setTimeout(updateTimer, 100);
 	    }
-				
-		function showNext(isNext) {
 		
+		function showNext(isNext) {		
 		    //move grouped prev/next elements left if next, right if previous
-		    var newX = 170;
+		    var newX = 130;
 		    if (isNext)
 		        newX = -newX;
 		    
 		    var newTransform = nextGroup.attr("transform").replace(/\([^,]+,/, "(" + newX + ",");
 		    
-		    nextGroup
+		    container
 		        .transition()
-		        .duration(250)
+		        .duration(400)
 		        .ease('ease-out')
-		        .style('opacity', 0.89)
-		        .attr('transform', newTransform);
+		        .attr('transform', 'translate(' + newX + ',0)');
+		        
+		    // start next check loop
+		    setTimeout(checkNextTimeout(1, isNext), 100);
 		}
 		
 		function hideNext() {
 			var newTransform = nextGroup.attr("transform").replace(/\([^,]+,/, "(" + -0.00001 + ",");
 		    
-		    nextGroup
+		    container
 		        .transition()
 		        .duration(150)
 		        .ease('ease-out')
-		        .style('opacity', 0.2)
-		        .attr('transform', newTransform);
+		        .attr('transform', 'translate(0,0)');
+		}
+		
+		function checkNextTimeout(time, isNext) {
+			if (time > 9) {
+				moveToNextEpisode(isNext);
+			} else {
+				setTimeout(checkNextTimeout(time + 1, isNext), 200);
+			}
+			
+		}
+		
+		function moveToNextEpisode(isNext) {
+			var newX;
+		    if (isNext)
+		    	newX = (currentEpisode - 1) * 400;
+		    else
+		    	newX = (currentEpisode + 1) * 400;
+		    			    
+		    container
+		        .transition()
+		        .duration(400)
+		        .ease('ease-out')
+		        .attr('transform', 'translate(' + newX + ',0)');
+		    
+		    /*
+		    if (isNext)
+		    	currentEpisode = currentEpisode + 1;
+		    else
+		    	currentEpisode = currentEpisode - 1;
+		    */
 		}
 		
 		function log(p) {
