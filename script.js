@@ -1,9 +1,15 @@
 var currentEpisode = 0;
+var waitingNext = false;
 
 window.addEventListener('load', function () {
     
 		
 	var episodes = [
+		{
+			title: 'Episode 28 - Descartes Pt. 1',
+			img: 'philosophizethis.jpg',
+			duration: 2800
+		},
 		{
 			title: 'The French Manicure',
 			img: 'fugitivewaves.png',
@@ -25,12 +31,7 @@ window.addEventListener('load', function () {
 			duration: 3200
 		},
 		{
-			title: 'Episode 28 - Descartes Pt. 1',
-			img: 'philosophizethis.jpg',
-			duration: 2800
-		},
-		{
-			title: '105 - Instagram Direct, Nexus TV, Spotify',
+			title: '105 - Instagram Direct',
 			img: 'vergecast.png',
 			duration: 3800
 		},
@@ -231,9 +232,10 @@ window.addEventListener('load', function () {
 		        showNext(true)
 		    else if (scrollPos < -0.9)
 		        showNext(false)
+		    /*
 		    else
 		    	hideNext();
-		    	
+		    */
 		    
 		    
 		    /*
@@ -273,7 +275,7 @@ window.addEventListener('load', function () {
 		    var secs = Math.floor(Math.abs(diffTime) % 60);
 		    if (secs < 10) secs = "0" + secs;
 		    var newTimerString = mins + ":" + secs;
-		    if (diffTime >= 0) newTimerString = "+" + newTimerString
+		    if (diffTime >= 0) newTimerString = "+" + newTimerString;
 		    else newTimerString = "-" + newTimerString;
 		    
 		    timer.text(newTimerString);
@@ -287,39 +289,61 @@ window.addEventListener('load', function () {
 		    var newX = 130;
 		    if (isNext)
 		        newX = -newX;
+		    newX = (currentEpisode - 1) * -400 + newX;
 		    
-		    var newTransform = nextGroup.attr("transform").replace(/\([^,]+,/, "(" + newX + ",");
-		    
+		    //var newTransform = nextGroup.attr("transform").replace(/\([^,]+,/, "(" + (currentEpisode * 400) - newX + ",");
+		    log("episode:" + currentEpisode)
+		    log("moving to " + newX)
 		    container
 		        .transition()
 		        .duration(400)
 		        .ease('ease-out')
+		        //.attr('transform', 'translate(-130,0)');
 		        .attr('transform', 'translate(' + newX + ',0)');
 		        
 		    // start next check loop
-		    setTimeout(checkNextTimeout(1, isNext), 100);
+		    if(!waitingNext) {
+				waitingNext = true;
+				setTimeout(checkNextTimeout(1, isNext), 200);
+		    }
+		    
 		}
 		
 		function hideNext() {
-			var newTransform = nextGroup.attr("transform").replace(/\([^,]+,/, "(" + -0.00001 + ",");
-		    
-		    container
-		        .transition()
-		        .duration(150)
-		        .ease('ease-out')
-		        .attr('transform', 'translate(0,0)');
+			//var newTransform = nextGroup.attr("transform").replace(/\([^,]+,/, "(" + -0.00001 + ",");
+			newX = currentEpisode * -400
+			
+			container
+				.transition()
+				.duration(150)
+				.ease('ease-out')
+				//.attr('transform', 'translate(-400,0)');
+				.attr('transform', 'translate(' + newX + ',0)');
+			
+			waitingNext = false;
+			
+			log('##########');
+			log(newX);
+			log(currentEpisode);
 		}
 		
 		function checkNextTimeout(time, isNext) {
+			/*
 			if (time > 9) {
 				moveToNextEpisode(isNext);
 			} else {
-				setTimeout(checkNextTimeout(time + 1, isNext), 200);
+				setTimeout(checkNextTimeout(time + 1, isNext), 50);
 			}
+			*/
+			var sc = scrubPos();
+			if (sc > 0.9 || sc < -0.9)
+				moveToNextEpisode(isNext);
 			
 		}
 		
 		function moveToNextEpisode(isNext) {
+			log("AAAAAAAAAAAAAAAAAAA");
+			/*
 			var newX;
 		    if (isNext)
 		    	newX = (currentEpisode - 1) * 400;
@@ -331,13 +355,19 @@ window.addEventListener('load', function () {
 		        .duration(400)
 		        .ease('ease-out')
 		        .attr('transform', 'translate(' + newX + ',0)');
-		    
-		    /*
-		    if (isNext)
+			*/
+			
+			//currentEpisode = 1;
+			log("OLD: " + currentEpisode);
+		    if (isNext && currentEpisode < 7)//episodes.length)
 		    	currentEpisode = currentEpisode + 1;
-		    else
+		    else if (currentEpisode > 0)
 		    	currentEpisode = currentEpisode - 1;
-		    */
+		    log("NEW: " + currentEpisode);
+		}
+		
+		function scrubPos () {
+		    return (Math.max(-160, Math.min(160, d3.event.x - 200))) / 160;
 		}
 		
 		function log(p) {
