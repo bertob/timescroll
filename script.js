@@ -1,4 +1,5 @@
 var progress = [200]; // 0 ... 400
+var tesst = 0;
 
 window.addEventListener('load', function () {
     
@@ -45,6 +46,7 @@ window.addEventListener('load', function () {
         var svg = d3.select('svg');
         
         var view = d3.select('#view');
+        var episode = d3.select('#episode');
         //var w = +view.attr('width');
         //var h = +view.attr('height');
         //var btn = svg.select("#title");
@@ -67,8 +69,8 @@ window.addEventListener('load', function () {
                       
         //var tr = d3.transform(d3.select(this).attr("transform"));
         //var btnx = tr.translate[0];
-                
-        
+        		
+        // behaviour      
         btn.on('mousedown', function () {
             //btnbg.style('fill', '#ffcb6e');
         });
@@ -144,15 +146,7 @@ window.addEventListener('load', function () {
 		    scrollTime(scrollPos);
 		    
 		    // update progress timer
-		    totalTime = episodes[0].duration;
-		    newWidth = +pArea.attr('width');
-		    var diffWidth = newWidth - initialWidth;
-		    var diffTime = (diffWidth / totalWidth) * totalTime;		    
-		    var newTimerString = Math.floor(Math.abs(diffTime) / 60) + ":" + Math.floor(Math.abs(diffTime) % 60);
-		    if (diffTime > 0) newTimerString = "+" + newTimerString
-		    else newTimerString = "-" + newTimerString;
-		    
-		    timer.text(newTimerString);
+		    updateTimer();    
 		    
 		    bubble
 		    	.transition()
@@ -194,6 +188,25 @@ window.addEventListener('load', function () {
 		        .attr('width', target);
 		}
 		
+		function updateTimer() {
+		    totalTime = episodes[0].duration;
+		    newWidth = +pArea.attr('width');
+		    var diffWidth = newWidth - initialWidth;
+		    var diffTime = (diffWidth / totalWidth) * totalTime;
+		    var mins = Math.floor(Math.abs(diffTime) / 60);
+		    if (mins < 10) mins = "0" + mins;
+		    var secs = Math.floor(Math.abs(diffTime) % 60);
+		    if (secs < 10) secs = "0" + secs;
+		    var newTimerString = mins + ":" + secs;
+		    if (diffTime > 0) newTimerString = "+" + newTimerString
+		    else newTimerString = "-" + newTimerString;
+		    
+		    timer.text(newTimerString);
+		    
+		    // periodically call this function to keep the timer updated
+		    setTimeout(updateTimer, 100);
+	    }
+				
 		function showNext(isNext) {
 		
 		    //move grouped prev/next elements left if next, right if previous

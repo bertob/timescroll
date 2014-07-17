@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="16"
-     inkscape:cx="216.41745"
-     inkscape:cy="329.76484"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="257.43999"
+     inkscape:cy="371.82355"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -35,11 +35,11 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1366"
-     inkscape:window-height="741"
-     inkscape:window-x="0"
-     inkscape:window-y="27"
-     inkscape:window-maximized="1"
+     inkscape:window-width="1244"
+     inkscape:window-height="626"
+     inkscape:window-x="119"
+     inkscape:window-y="98"
+     inkscape:window-maximized="0"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
@@ -85,14 +85,6 @@
        x="0"
        y="0"
        inkscape:label="#rect4674" />
-    <image
-       sodipodi:absref="/home/tobias/design/timescroll/img/onthegrid.png"
-       xlink:href="img/onthegrid.png"
-       width="400"
-       height="400"
-       id="image4676"
-       x="0"
-       y="120" />
     <rect
        y="520"
        x="0"
@@ -100,14 +92,6 @@
        width="400"
        id="rect4678"
        style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#1b1b1b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate" />
-    <rect
-       y="0"
-       x="0"
-       height="120.79838"
-       width="337.18262"
-       id="progress-area"
-       style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.15;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
-       inkscape:label="#rect4680" />
     <rect
        transform="scale(1,-1)"
        style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
@@ -117,14 +101,6 @@
        x="40"
        y="-582"
        inkscape:label="#rect4682" />
-    <rect
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#ffb329;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 4;stroke-dashoffset:2.20000005;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       id="progress-marker"
-       width="4"
-       height="120.79834"
-       x="337.18262"
-       y="0"
-       inkscape:label="#rect3367" />
     <rect
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.18000004;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#ffbb3f;fill-opacity:1;fill-rule:nonzero;stroke:#ffb329;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 4;stroke-dashoffset:2.20000005;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="rect3369"
@@ -145,11 +121,11 @@
         <image
            sodipodi:absref="/home/tobias/design/timescroll/img/philosophizethis.jpg"
            xlink:href="img/philosophizethis.jpg"
-           y="2504.1899"
-           x="3297.1428"
-           id="image3869-5-4"
+           width="400"
            height="400"
-           width="400" />
+           id="image3869-5-4"
+           x="3297.1428"
+           y="2504.1899" />
         <rect
            style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#242b35;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
            id="rect4229-1"
@@ -195,11 +171,11 @@
         <image
            sodipodi:absref="/home/tobias/design/timescroll/img/vergecast.png"
            xlink:href="img/vergecast.png"
-           y="331.33282"
-           x="905.71429"
-           id="image4344-3"
+           width="400"
            height="400"
-           width="400" />
+           id="image4344-3"
+           x="905.71429"
+           y="331.33282" />
         <text
            sodipodi:linespacing="125%"
            id="text4322"
@@ -288,11 +264,11 @@
     <image
        sodipodi:absref="/home/tobias/design/timescroll/img/onthegrid.png"
        xlink:href="img/onthegrid.png"
-       y="859.99994"
-       x="10"
-       id="image4676-7"
+       width="400"
        height="400"
-       width="400" />
+       id="image4676-7"
+       x="10"
+       y="859.99994" />
     <rect
        y="740"
        x="10"
@@ -463,71 +439,99 @@
         </g>
       </g>
     </g>
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 31,73.99992 -12,-14 12,-14"
-       id="path3460"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccc" />
     <g
-       style="fill:#ffffff"
-       transform="translate(-16390,-2057.3624)"
-       id="g3462">
-      <circle
-         r="3.4999037"
-         cy="2130.8623"
-         cx="16765"
-         id="circle3464"
-         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 4;stroke-dashoffset:2.20000005;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-         d="m 16768.5,2130.8623 a 3.4999037,3.4999037 0 0 1 -3.5,3.4999 3.4999037,3.4999037 0 0 1 -3.5,-3.4999 3.4999037,3.4999037 0 0 1 3.5,-3.4999 3.4999037,3.4999037 0 0 1 3.5,3.4999 z" />
-      <circle
-         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 4;stroke-dashoffset:2.20000005;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-         id="circle3466"
-         cx="16765"
-         cy="2103.8625"
-         r="3.5000062"
-         d="m 16768.5,2103.8625 a 3.5000062,3.5000062 0 0 1 -3.5,3.5001 3.5000062,3.5000062 0 0 1 -3.5,-3.5001 3.5000062,3.5000062 0 0 1 3.5,-3.5 3.5000062,3.5000062 0 0 1 3.5,3.5 z" />
-      <circle
-         r="3.5"
-         cy="2117.3625"
-         cx="16765"
-         id="circle3468"
-         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 4;stroke-dashoffset:2.20000005;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-         d="m 16768.5,2117.3625 a 3.5,3.5 0 0 1 -3.5,3.5 3.5,3.5 0 0 1 -3.5,-3.5 3.5,3.5 0 0 1 3.5,-3.5 3.5,3.5 0 0 1 3.5,3.5 z" />
-    </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:125%;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none"
-       x="199.88672"
-       y="67"
-       id="title"
-       sodipodi:linespacing="125%"
-       inkscape:label="#text3470"><tspan
-         sodipodi:role="line"
-         id="tspan3472"
-         x="199.88672"
-         y="67">Episode 70: Pinspiration</tspan></text>
-    <g
-       id="bubble"
-       inkscape:label="#g3408"
-       transform="matrix(0.0090909,0,0,0.0090909,198.18182,317.09091)"
-       style="opacity:0">
-      <circle
-         id="progress-circle"
-         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.85;fill:#1b1b1b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
-         cx="200"
-         cy="320"
-         r="110.00012"
-         inkscape:label="#circle3474"
-         d="M 310.00012,320 A 110.00012,110.00012 0 0 1 200,430.00012 110.00012,110.00012 0 0 1 89.999878,320 110.00012,110.00012 0 0 1 200,209.99988 110.00012,110.00012 0 0 1 310.00012,320 Z" />
+       id="episode"
+       inkscape:label="#g3406">
+      <image
+         sodipodi:absref="/home/tobias/design/timescroll/img/onthegrid.png"
+         xlink:href="img/onthegrid.png"
+         width="400"
+         height="400"
+         id="image4676"
+         x="0"
+         y="120" />
+      <rect
+         inkscape:label="#rect4680"
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.15;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
+         id="progress-area"
+         width="337.18262"
+         height="120.79838"
+         x="0"
+         y="0" />
+      <rect
+         inkscape:label="#rect3367"
+         y="0"
+         x="337.18262"
+         height="120.79834"
+         width="4"
+         id="progress-marker"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#ffb329;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 4;stroke-dashoffset:2.20000005;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path3460"
+         d="m 31,73.99992 -12,-14 12,-14"
+         style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1" />
+      <g
+         id="g3462"
+         transform="translate(-16390,-2057.3624)"
+         style="fill:#ffffff">
+        <circle
+           d="m 16768.5,2130.8623 a 3.4999037,3.4999037 0 0 1 -3.5,3.4999 3.4999037,3.4999037 0 0 1 -3.5,-3.4999 3.4999037,3.4999037 0 0 1 3.5,-3.4999 3.4999037,3.4999037 0 0 1 3.5,3.4999 z"
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 4;stroke-dashoffset:2.20000005;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="circle3464"
+           cx="16765"
+           cy="2130.8623"
+           r="3.4999037" />
+        <circle
+           d="m 16768.5,2103.8625 a 3.5000062,3.5000062 0 0 1 -3.5,3.5001 3.5000062,3.5000062 0 0 1 -3.5,-3.5001 3.5000062,3.5000062 0 0 1 3.5,-3.5 3.5000062,3.5000062 0 0 1 3.5,3.5 z"
+           r="3.5000062"
+           cy="2103.8625"
+           cx="16765"
+           id="circle3466"
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 4;stroke-dashoffset:2.20000005;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+        <circle
+           d="m 16768.5,2117.3625 a 3.5,3.5 0 0 1 -3.5,3.5 3.5,3.5 0 0 1 -3.5,-3.5 3.5,3.5 0 0 1 3.5,-3.5 3.5,3.5 0 0 1 3.5,3.5 z"
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 4;stroke-dashoffset:2.20000005;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="circle3468"
+           cx="16765"
+           cy="2117.3625"
+           r="3.5" />
+      </g>
       <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none"
-         x="200"
-         y="334.99994"
-         id="addtimer"
+         inkscape:label="#text3470"
          sodipodi:linespacing="125%"
-         inkscape:label="#text3480">+04:49</text>
+         id="title"
+         y="67"
+         x="199.88672"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:125%;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           y="67"
+           x="199.88672"
+           id="tspan3472"
+           sodipodi:role="line">Episode 70: Pinspiration</tspan></text>
+      <g
+         style="opacity:0"
+         transform="matrix(0.0090909,0,0,0.0090909,198.18182,317.09091)"
+         inkscape:label="#g3408"
+         id="bubble">
+        <circle
+           d="M 310.00012,320 A 110.00012,110.00012 0 0 1 200,430.00012 110.00012,110.00012 0 0 1 89.999878,320 110.00012,110.00012 0 0 1 200,209.99988 110.00012,110.00012 0 0 1 310.00012,320 Z"
+           inkscape:label="#circle3474"
+           r="110.00012"
+           cy="320"
+           cx="200"
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.85;fill:#1b1b1b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
+           id="progress-circle" />
+        <text
+           inkscape:label="#text3480"
+           sodipodi:linespacing="125%"
+           id="addtimer"
+           y="334.99994"
+           x="200"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none"
+           xml:space="preserve">+04:49</text>
+      </g>
     </g>
   </g>
 </svg>
