@@ -287,9 +287,14 @@ window.addEventListener('load', function () {
 		function showNext(isNext) {		
 		    //move grouped prev/next elements left if next, right if previous
 		    var newX = 130;
-		    if (isNext)
+		    var ep;
+		    if (isNext) {
 		        newX = -newX;
-		    newX = (currentEpisode - 1) * -400 + newX;
+		        ep = currentEpisode - 1;
+			} else {
+				ep = currentEpisode + 1;
+			}
+		    newX = ep * -400 + newX;
 		    
 		    //var newTransform = nextGroup.attr("transform").replace(/\([^,]+,/, "(" + (currentEpisode * 400) - newX + ",");
 		    log("episode:" + currentEpisode)
@@ -320,7 +325,10 @@ window.addEventListener('load', function () {
 				//.attr('transform', 'translate(-400,0)');
 				.attr('transform', 'translate(' + newX + ',0)');
 			
+			// cleanup after moving to new episode
 			waitingNext = false;
+			
+			currentEpisode
 			
 			log('##########');
 			log(newX);
@@ -359,10 +367,12 @@ window.addEventListener('load', function () {
 			
 			//currentEpisode = 1;
 			log("OLD: " + currentEpisode);
-		    if (isNext && currentEpisode < 7)//episodes.length)
+			
+		    if (isNext && currentEpisode < episodes.length)
 		    	currentEpisode = currentEpisode + 1;
 		    else if (currentEpisode > 0)
 		    	currentEpisode = currentEpisode - 1;
+		    	
 		    log("NEW: " + currentEpisode);
 		}
 		
